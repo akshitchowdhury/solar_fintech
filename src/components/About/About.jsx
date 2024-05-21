@@ -6,6 +6,7 @@ import v3 from "../../assets/about/corportaePartners.png"
 import m1 from "../../assets/about/inclusiveInvest.png"
 import m2 from "../../assets/about/innovativeFinance.jpg"
 import m3 from "../../assets/about/sustainableGoals.png"
+import approach from "../../assets/about/approach.png"
 const About = () => {
   const visionData = [
     {
@@ -44,9 +45,30 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-gray-100 p-6 md:p-12">
+    <div className="bg-gray-100 p-6 md:p-12 ">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-center mb-8">About Solar Fintech</h1>
+        
+        
+      <div className="flex flex-col md:flex-row gap-20 mx-20 ">
+        <div className="flex w-full md:w-3/4">
+          <img
+            loading="lazy"
+            src={approach}
+            className="w-full h-auto "
+            alt="App Development"
+          />
+        </div>
+
+        <div className="flex flex-col  w-full md:w-full ">
+          <div className="text-justify mb-8">
+            <h1 className="text-3xl font-bold text-gray-800">Our Approach</h1>
+            <p className="mt-4 text-gray-600">
+              We believe that successful applications are built on a foundation of strategic planning, creative design, and flawless execution. Our process begins with a deep dive into your business objectives, target audience, and industry landscape. From there, we work collaboratively with you to conceptualize, design, develop, and launch a tailored solution that meets your specific needs and exceeds your expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    
 
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Our Vision</h2>

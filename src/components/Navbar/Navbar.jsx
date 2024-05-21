@@ -145,7 +145,7 @@ function Navbar() {
   return (
     <div className="absolute top-0 left-0 z-50 p-4">
   <Button onClick={toggleDrawer(true)}>
-    <MenuOpenIcon className="text-white "
+    <MenuOpenIcon className="text-black "
     style={{
       fontSize: '40px'
     }} />
