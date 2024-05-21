@@ -7,6 +7,7 @@ import m1 from "../../assets/about/inclusiveInvest.png"
 import m2 from "../../assets/about/innovativeFinance.jpg"
 import m3 from "../../assets/about/sustainableGoals.png"
 import approach from "../../assets/about/approach.png"
+import CountRise from './CountRise/CountRise';
 const About = () => {
   const visionData = [
     {
@@ -45,7 +46,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-gray-100 p-6 md:p-12 ">
+    <div className="bg-gray-100 p-6 md:p-28 ">
       <div className="max-w-7xl mx-auto">
         
         
@@ -69,6 +70,7 @@ const About = () => {
         </div>
       </div>
     
+    <CountRise/>
 
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Our Vision</h2>
