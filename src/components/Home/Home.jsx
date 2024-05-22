@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,6 +23,8 @@ const Home = () => {
           </p>
          
           <div className="buttons flex flex-wrap justify-center md:justify-start gap-6">
+    
+    <Link to="/contact">
     <button
         type="button"
         className="text-white px-6 py-2 h-14 w-1/5 sm:w-auto lg:w-16 md:w-16
@@ -33,6 +36,7 @@ const Home = () => {
     >
         <FaArrowRight className="mx-2 md:mx-0"/>
     </button>
+    </Link>
 
     <button
         type="button"

@@ -3,11 +3,18 @@
     height: 100vh;
 }
 
-.left{
+.left {
+    position: relative;
     background-image: url("../../assets/contactLeft.jpg");
     background-size: cover;
-
-}
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .left:hover {
+    transform: scale(1.05);
+    
+  }
 
 .rtop{
     background-image: url("../../assets/contactRight.jpg");
