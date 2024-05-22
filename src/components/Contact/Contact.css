@@ -1,0 +1,15 @@
+
+.contact{
+    height: 100vh;
+}
+
+.left{
+    background-image: url("../../assets/contactLeft.jpg");
+    background-size: cover;
+
+}
+
+.rtop{
+    background-image: url("../../assets/contactRight.jpg");
+    background-size: cover;
+}
