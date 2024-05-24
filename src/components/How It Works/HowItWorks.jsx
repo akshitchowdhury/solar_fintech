@@ -1,8 +1,43 @@
 import React from 'react';
 import Industry from './Industry/Industry';
 
+import i1 from '../../assets/contactLeft.jpg'
+import i2 from '../../assets/about/approach.png'
+import i3 from '../../assets/contactRight.jpg'
+import i4 from '../../assets/investmentCycle.png'
+import i5 from '../../assets/webDesign.webp'
+import i6 from '../../assets/investmentCycle.png'
 import invetmentCycle from '../../assets/investmentCycle.png'
+import PopularDetinationCarousel from './PopularDestinations/PopularDetinationCarousel';
+import StepsToPartner from './StepsToPartner';
 const HowItWorks = () => {
+    const testimonials = [
+        {
+          text: "\"Installing solar panels helped us significantly reduce our electricity costs and carbon footprint. Our corporate sustainability initiatives have been enhanced as a result. Highly recommended for any business looking to make a positive environmental impact.\"",
+          image: i1
+        },
+        {
+          text: "\"Switching to solar energy reduces not only the utility bills but also aligns with our green goals. The potential tax incentives and rebates made it a financially smart decision as well. We are proud to contribute to a greener future.\"",
+          image: i2
+        },
+        {
+          text: "\"Since installing solar panels, our electricity expenses have dropped significantly. The investment also boosted our property value and strengthened our commitment to sustainability. We're thrilled with the results and the positive impact on our environmental footprint.\"",
+          image: i3
+        },
+        {
+          text: "\"Our company's decision to go solar has paid off immensely. We've noticed substantial savings on energy costs and have taken advantage of several tax incentives. The increase in property value is an added bonus. Solar energy is a win-win for our business and the environment.\"",
+          image: i4
+        },
+        {
+          text: "\"Adopting solar power was a game-changer for our organization. We now enjoy lower electricity bills and have improved our corporate sustainability profile. The tax rebates and potential property value increase made the switch even more beneficial.\"",
+          image: i5
+        },
+        {
+          text: "\"Investing in solar panels has been a great decision for reducing our operating costs and environmental impact. Our sustainability initiatives have received a major boost, and we are seeing the financial benefits through tax incentives and increased property value.\"",
+          image: i6
+        }
+      ]
+      
   return (
     <div className="container mx-auto p-6">
       {/* Section for Investors */}
@@ -31,28 +66,11 @@ const HowItWorks = () => {
       {/* Section for Corporates */}
       <section className="my-12 bg-gray-100 p-6 rounded-lg">
         <h2 className="text-3xl font-bold text-center mb-8">How It Works for Corporates</h2>
-        <div className="flex flex-col lg:flex-row items-center">
-          {/* Benefits */}
-          <div className="lg:w-1/2 p-4">
-            <h3 className="text-2xl font-semibold mb-4">Benefits of Installing Solar Panels</h3>
-            <ul className="list-disc list-inside">
-              <li className="mb-2">Reduce electricity costs and carbon footprint.</li>
-              <li className="mb-2">Enhance corporate sustainability initiatives.</li>
-              <li className="mb-2">Potential tax incentives and rebates.</li>
-              <li className="mb-2">Increase property value.</li>
-            </ul>
-          </div>
+        <div className="flex flex-col lg:flex-col md:items-start items-center">
+          
+          <PopularDetinationCarousel testimonials={testimonials}/>
           {/* Installation process */}
-          <div className="lg:w-1/2 p-4">
-            <h3 className="text-2xl font-semibold mb-4">Steps to Partner with Us</h3>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2">Contact us for a consultation.</li>
-              <li className="mb-2">Get a customized solar plan and quote.</li>
-              <li className="mb-2">Approve the plan and schedule installation.</li>
-              <li className="mb-2">Installation and setup of solar panels.</li>
-              <li className="mb-2">Monitor performance and savings through our dashboard.</li>
-            </ol>
-          </div>
+          <StepsToPartner/>
         </div>
         {/* Visual aids */}
         <div className="mt-8 flex justify-center">
