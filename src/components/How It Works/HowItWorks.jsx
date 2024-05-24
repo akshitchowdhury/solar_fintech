@@ -1,36 +1,31 @@
 import React from 'react';
 import Industry from './Industry/Industry';
 
+import invetmentCycle from '../../assets/investmentCycle.png'
 const HowItWorks = () => {
   return (
     <div className="container mx-auto p-6">
       {/* Section for Investors */}
       <section className="my-12">
-        <h2 className="text-3xl font-bold text-center mb-8">How It Works for Investors</h2>
-        <div className="flex flex-col lg:flex-col items-start">
-          {/* Step-by-step guide */}
-          {/* <div className="lg:w-1/2 p-4">
-            <h3 className="text-2xl font-semibold mb-4">Step-by-step Guide</h3>
-            <ol className="list-decimal list-inside">
-              <li className="mb-2">Sign up and create an account.</li>
-              <li className="mb-2">Browse available microshare opportunities.</li>
-              <li className="mb-2">Select the microshare you'd like to invest in.</li>
-              <li className="mb-2">Complete the purchase process.</li>
-              <li className="mb-2">Track your investments and returns through your dashboard.</li>
-            </ol>
-          </div> */}
+        
+        <div className="flex flex-col lg:flex-col items-end">
+
           <Industry/>
           {/* Investment process */}
+          <div className=' flex flex-col md:flex-row items-center'>
+          <img src={invetmentCycle} alt="Investment Process Diagram" className="w-1/2 max-w-xl
+          h-1/2"/>
+
           <div className="lg:w-1/2 p-4">
+          
             <h3 className="text-2xl font-semibold mb-4">Investment Process</h3>
             <p className="mb-4">Our platform allows you to invest in solar projects easily and securely. You can expect potential returns based on the performance of the projects you invest in. However, as with any investment, there are risks involved, including the potential for loss of principal.</p>
             <p>Investments are diversified across multiple projects to minimize risk and maximize potential returns.</p>
+          
+          </div>
           </div>
         </div>
-        {/* Visual aids */}
-        <div className="mt-8 flex justify-center">
-          <img src="/images/investor-process-diagram.png" alt="Investment Process Diagram" className="w-full max-w-xl"/>
-        </div>
+
       </section>
 
       {/* Section for Corporates */}

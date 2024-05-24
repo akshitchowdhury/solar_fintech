@@ -21,9 +21,7 @@ const Industry = () => {
 
   return (
     <div className="container mx-auto py-16 px-4 my-14">
-      <p className="text-black font-semibold text-2xl md:text-5xl">
-        Industries we have collaborated with
-      </p>
+      <h2 className="text-4xl font-semibold text-start mb-8">How It Works for Investors</h2>
       <hr className="text-black w-[70%] my-7" />
 
       {/* Large and Medium Screens Layout */}
