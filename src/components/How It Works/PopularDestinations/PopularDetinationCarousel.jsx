@@ -37,7 +37,7 @@ const PopularDetinationCarousel = ({ testimonials }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -46,9 +46,8 @@ const PopularDetinationCarousel = ({ testimonials }) => {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
@@ -62,27 +61,20 @@ const PopularDetinationCarousel = ({ testimonials }) => {
   };
 
   return (
-    <>
-      <div className="bg-inherit flex flex-col md:flex-row sm:flex-col py-16 px-6">
-        <h2 className="text-center text-black text-3xl py-4 my-8 font-semibold md:text-3xl mb-8">
-           Book your dream getaway today and embark on an unforgettable
-          journey with us!:
-        </h2>
-        <div className="max-w-full md:max-w-2xl mx-auto">
-          {" "}
-          {/* Adjusted max-width */}
-          <div className="carousel">
-            <Slider ref={sliderRef} {...settings}>
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="testimonial-card-container mx-auto">
-                  <PopularDestinationCard {...testimonial} />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
+    <div className="bg-inherit flex flex-col md:flex-row  items-center py-16 px-6">
+      <h2 className="text-center text-black text-xl py-4 my-8 font-semibold md:text-3xl mb-8">
+        Benefits of using Solar Panels
+      </h2>
+      <div className="w-full max-w-[320px] lg:max-w-3xl md:max-w-4xl">
+        <Slider ref={sliderRef} {...settings}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="px-2">
+              <PopularDestinationCard {...testimonial} />
+            </div>
+          ))}
+        </Slider>
       </div>
-    </>
+    </div>
   );
 };
 

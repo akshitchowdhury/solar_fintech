@@ -6,7 +6,7 @@ import i3 from '../../assets/contactRight.jpg';
 import i4 from '../../assets/investmentCycle.png';
 import i5 from '../../assets/webDesign.webp';
 import i6 from '../../assets/investmentCycle.png';
-
+ 
 const steps = [
   { step: "Contact us for a consultation.", imgSrc: i1 },
   { step: "Get a customized solar plan and quote.", imgSrc: i2 },
