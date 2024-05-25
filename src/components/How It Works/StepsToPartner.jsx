@@ -1,73 +1,72 @@
-import { useState } from 'react';
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 
-import i1 from '../../assets/contactLeft.jpg';
-import i2 from '../../assets/about/approach.png';
-import i3 from '../../assets/contactRight.jpg';
-import i4 from '../../assets/investmentCycle.png';
-import i5 from '../../assets/webDesign.webp';
-import i6 from '../../assets/investmentCycle.png';
- 
-const steps = [
-  { step: "Contact us for a consultation.", imgSrc: i1 },
-  { step: "Get a customized solar plan and quote.", imgSrc: i2 },
-  { step: "Approve the plan and schedule installation.", imgSrc: i3 },
-  { step: "Installation and setup of solar panels.", imgSrc: i4 },
-  { step: "Monitor performance and savings through our dashboard.", imgSrc: i5 }
-];
-
-const AccordionCard = ({ step, imgSrc, isOpen, onClick }) => (
-  <div 
-    className={`bg-white rounded-lg shadow-md 
-    overflow-hidden transition-all ease-in-out duration-300 ${isOpen ? 'max-w-full' : 'max-w-xs'}`}
-    onClick={onClick}
-    style={{ cursor: 'pointer' }}
-  >
-    <div className="flex flex-col md:flex-row items-center">
-    <img 
-        src={imgSrc} 
-        alt={step} 
-        className="object-contain"
-        style={{ width: '100px', height: '100px' }}
-      />
-      {isOpen && (
-        <>
-        <div className="p-4 flex-1 w-auto md:w-[500px]">
-          <h4 className="text-lg font-medium">{step}</h4>
-        </div>
-        </>
-      )}
-    </div>
-  </div>
-);
-
-const StepsToPartner = () => {
+const StepsToPartner = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="p-4">
-      <h3 className="text-2xl font-semibold mb-4">Steps to Partner with Us</h3>
-      <div className="flex  md:flex-col md:gap-4 items-center">
-      <div className="flex-1 items-center">
-          {openIndex !== null && (
-            <img 
-              src={steps[openIndex].imgSrc} 
-              alt={steps[openIndex].step} 
-              className="object-contain md:w-1/2 md:h-1/2"
-            />
-          )}
-        </div>
-        <div className="flex flex-row gap-20 items-center">
-          {steps.map((item, index) => (
-            <AccordionCard 
-              key={index} 
-              step={item.step} 
-              imgSrc={item.imgSrc} 
-              isOpen={openIndex === index} 
-              onClick={() => setOpenIndex(openIndex === index ? null : index)} 
-            />
-          ))}
-        </div>
-        
+    <div className="w-full">
+      <h1 className="text-black mx-4 font-bold text-3xl mb-2 md:mb-4">
+        Steps to Partner with us
+      </h1>
+      <div className="flex flex-col md:flex-row flex-1 flex-wrap -mx-2">
+        {items.map((item, index) => (
+          <div key={index} className="mb-4 md:w-1/3 px-2">
+            <button
+              className="w-full flex justify-between items-end bg-white border border-gray-300 p-4 rounded-md focus:outline-none transition-colors duration-700 hover:bg-yellow-300"
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+            >
+              <FontAwesomeIcon
+                icon={faSun}
+                className={`h-6 w-6 text-amber-600 transition-transform transform ${
+                  openIndex === index ? "rotate-180" : ""
+                }`}
+              />
+              <span className="text-sm font-semibold text-start text-fuchsia-700">
+                {item.title}
+              </span>
+            </button>
+            <Transition
+              show={openIndex === index}
+              enter="transition ease-out duration-200"
+              enterFrom="transform opacity-0 scale-0"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-150"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-0"
+            >
+              <div className="overflow-hidden transition-all duration-200">
+                <div className="p-4 rounded-md">
+                  <div
+                    className="flex flex-col md:flex-row flex-wrap items-center md:items-start"
+                    style={{
+                      border: "1pt solid gold",
+                      borderRadius: "10px",
+                      backgroundColor: "inherit",
+                      boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)",
+                      padding: "5%",
+                    }}
+                  >
+                    <img
+                      src={item.image}
+                      alt="Play Paw Logo"
+                      className="rounded-lg md:w-1/3"
+                    />
+                    <br />
+                    <p
+                      className="text-lg mb-4 md:w-auto md:pr-8 text-sky-600"
+                      style={{ fontFamily: "cursive", fontSize: "1.5rem" }}
+                    >
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Transition>
+          </div>
+        ))}
       </div>
     </div>
   );

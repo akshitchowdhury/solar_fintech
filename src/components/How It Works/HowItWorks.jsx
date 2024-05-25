@@ -10,6 +10,7 @@ import i6 from '../../assets/investmentCycle.png'
 import invetmentCycle from '../../assets/investmentCycle.png'
 import PopularDetinationCarousel from './PopularDestinations/PopularDetinationCarousel';
 import StepsToPartner from './StepsToPartner';
+import items from './partnerData';
 const HowItWorks = () => {
     const testimonials = [
         {
@@ -36,7 +37,9 @@ const HowItWorks = () => {
           text: "Investing in solar panels reduces operating costs and environmental impact, boosts sustainability initiatives, and provides financial benefits through tax incentives and increased property value.",
           image: i6
         }
-      ]
+      ];
+
+    
       
   return (
     <div className="container mx-auto p-6">
@@ -70,7 +73,7 @@ const HowItWorks = () => {
           
           <PopularDetinationCarousel testimonials={testimonials}/>
           {/* Installation process */}
-          <StepsToPartner/>
+          <StepsToPartner items={items}/>
         </div>
         {/* Visual aids */}
         <div className="mt-8 flex justify-center">
