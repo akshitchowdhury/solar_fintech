@@ -46,11 +46,10 @@ const HowItWorks = () => {
         <div className="container mx-auto px-4 py-20 md:py-40">
           <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
             <h1 className="text-3xl font-bold text-white md:text-5xl">
-              About US
+              Invest in us
             </h1>
             <p className="text-xl font-semibold text-gray-300 md:text-2xl">
-              Empowering lived to revolutionize solar energy sector with
-              innovative solutions.
+              Buy microshares or invest in the cutting edge solar panel technology.
             </p>
           </div>
         </div>

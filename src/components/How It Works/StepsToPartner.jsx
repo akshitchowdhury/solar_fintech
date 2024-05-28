@@ -7,7 +7,7 @@ const StepsToPartner = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="w-full ">
+    <div className="w-full my-12">
       <h1 className="text-black mx-4 font-bold text-3xl mb-2 md:mb-4">
         Steps to Partner with us
       </h1>
@@ -38,32 +38,34 @@ const StepsToPartner = ({ items }) => {
               leaveTo="transform opacity-0 scale-0"
             >
               <div className="overflow-hidden transition-all duration-200">
-                <div className="p-4 rounded-md">
-                  <div
-                    className="flex flex-col md:flex-row flex-wrap items-center md:items-start"
-                    style={{
-                      border: "1pt solid gold",
-                      borderRadius: "10px",
-                      backgroundColor: "inherit",
-                      boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)",
-                      padding: "5%",
-                    }}
-                  >
-                    <img
-                      src={item.image}
-                      alt="Play Paw Logo"
-                      className="rounded-lg md:w-1/3"
-                    />
-                    <br />
-                    <p
-                      className="text-lg mb-4 md:w-auto md:pr-8 text-sky-600"
-                      style={{ fontFamily: "cursive", fontSize: "1.5rem" }}
-                    >
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <div className="p-4 rounded-md">
+    <div
+      className="flex flex-col md:flex-col  items-center md:items-start 
+      bg-sky-700
+       bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 rounded-md shadow-lg p-5"
+      style={{
+        border: "1pt solid gold",
+        borderRadius: "10px",
+        boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)",
+        padding: "5%",
+      }}
+    >
+      <img
+        src={item.image}
+        alt="Play Paw Logo"
+        className="rounded-lg md:w-1/3"
+      />
+      <br />
+      <p
+        className="text-lg mb-4 md:w-auto md:pr-8 text-sky-600"
+        
+      >
+        {item.desc}
+      </p>
+    </div>
+  </div>
+</div>
+
             </Transition>
           </div>
         ))}

@@ -33,7 +33,7 @@ const Industry = () => {
                 key={index}
                 className="cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105"
                 onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
+                // onMouseLeave={handleMouseLeave}
               >
                 {item.title}
               </li>
