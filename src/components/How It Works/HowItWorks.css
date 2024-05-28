@@ -1,0 +1,12 @@
+.service-section{
+    background-image: url("../../assets/HowItWorksBg.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.secondndHalf{
+    background-image: url("../../assets/secondHalf.jpg");
+    background-size: cover;
+}

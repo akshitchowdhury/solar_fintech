@@ -7,7 +7,7 @@ const StepsToPartner = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <h1 className="text-black mx-4 font-bold text-3xl mb-2 md:mb-4">
         Steps to Partner with us
       </h1>

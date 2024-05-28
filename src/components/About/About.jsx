@@ -8,6 +8,7 @@ import m2 from "../../assets/about/innovativeFinance.jpg";
 import m3 from "../../assets/about/sustainableGoals.png";
 import approach from "../../assets/about/approach.png";
 import CountRise from "./CountRise/CountRise";
+import './About.css'
 const About = () => {
   const visionData = [
     {
@@ -52,6 +53,20 @@ const About = () => {
   ];
 
   return (
+    <>
+      <section className="about-section bg-cover bg-center">
+        <div className="container mx-auto px-4 py-20 md:py-40">
+          <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
+              About US 
+            </h1>
+            <p className="text-xl font-semibold text-gray-300 md:text-2xl">
+            Empowering lived to revolutionize solar energy sector with innovative solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+    
     <div className="bg-gray-100 p-6 md:p-28 ">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 mx-6 md:mx-20 ">
@@ -133,6 +148,7 @@ const About = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 

@@ -62,7 +62,7 @@ const PopularDetinationCarousel = ({ testimonials }) => {
 
   return (
     <div className="bg-inherit flex flex-col md:flex-row  items-center py-16 px-6">
-      <h2 className="text-center text-black text-xl py-4 my-8 font-semibold md:text-3xl mb-8">
+      <h2 className="text-left text-white text-xl py-4 my-8 font-semibold md:text-3xl mb-8">
         Benefits of using Solar Panels
       </h2>
       <div className="w-full max-w-[320px] lg:max-w-3xl md:max-w-4xl">

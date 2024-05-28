@@ -1,0 +1,7 @@
+.about-section{
+    height: 70vh; /* Adjust height as needed */
+    background-image: url('../../assets/aboutBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
