@@ -21,7 +21,9 @@ const Industry = () => {
 
   return (
     <div className="container mx-auto py-16 px-4 my-14">
-      <h2 className="text-4xl font-semibold text-start mb-8">How It Works for Investors</h2>
+      <h2 className="text-4xl font-semibold text-start mb-8">
+        How It Works for Investors
+      </h2>
       <hr className="text-black w-[70%] my-7" />
 
       {/* Large and Medium Screens Layout */}
@@ -31,7 +33,10 @@ const Industry = () => {
             {data.map((item, index) => (
               <li
                 key={index}
-                className="cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105"
+                className="cursor-pointer transition 
+                ease-in-out duration-200 hover:scale-105 bg-white 
+                bg-opacity-10 backdrop-filter backdrop-blur-lg border border-transparent hover:border-orange-500 
+                hover:border-opacity-20 rounded-md p-2"
                 onMouseEnter={() => handleMouseEnter(index)}
                 // onMouseLeave={handleMouseLeave}
               >
