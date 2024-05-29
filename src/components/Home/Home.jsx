@@ -1,24 +1,34 @@
 import React from "react";
 import "./Home.css";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <div className="home">{/* Background div */}</div>
-
-      <div className="absolute top-1/3 left-1/2 md:top-1/3 md:left-1/3 transform -translate-x-1/2 -translate-y-1/3 w-full flex flex-col items-center p-5 md:p-20 gap-5">
+      <div className="home">{/* Background div */}
+      
+      
+      </div>
+      <div className="SocialIcons absolute top-[30px] right-[10%] flex flex-row 
+      items-end justify-between md:top-[30px] md:right-[10%] gap-7 md:gap-x-40">
+      <FaInstagram className="text-white"/>
+      <FaTwitter className="text-white"/>
+      <FaFacebook className="text-white"/>
+      <FaLinkedin className="text-white"/>
+      </div>
+      <div className="absolute top-[40%] left-1/2 md:top-1/3 md:left-1/3 transform -translate-x-1/2 -translate-y-1/3 w-full flex flex-col items-center p-5 md:p-20 gap-5">
         <div className="flex flex-col w-full md:w-2/3 text-center">
-          <div className="mt-3 text-sm text-sky-500 flex items-center justify-start">
+          {/* <div className="mt-3 text-sm text-sky-500 flex items-center justify-start">
             <hr className="w-1/6 md:w-1/12 border-sky-500" />
             <span className="mx-2 md:mx-4">Innovate Inspire Integrate</span>
             <hr className="w-1/6 md:w-1/12 border-sky-500" />
-          </div>
-          <div className="text-4xl md:text-7xl text-left font-semibold text-white leading-tight md:leading-[79px]">
+          </div> */}
+          <div className="text-4xl md:text-7xl text-center md:text-left  font-semibold text-white leading-tight md:leading-[79px]">
             Solar Fintech
           </div>
-          <p className="text-lg my-4 w-2/3 text-white font-normal text-left">
+          <hr className="w-full md:w-[500px] my-2 border-white" />
+          <p className="text-lg my-4 w-full md:w-2/3 text-white font-normal text-center md:text-left">
             Offering microshares to users and offering solar panels to corporates.
           </p>
          
@@ -34,7 +44,7 @@ const Home = () => {
              hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out
              sm:ml-0 lg:ml-2 md:ml-2" // Adjust left margin for small screens
     >
-        <FaArrowRight className="mx-2 md:mx-0"/>
+        <FaArrowRight className="-mx-1 md:mx-0"/>
     </button>
     </Link>
 
