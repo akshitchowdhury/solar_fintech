@@ -35,7 +35,7 @@ const Industry = () => {
                 key={index}
                 className="cursor-pointer transition 
                 ease-in-out duration-200 hover:scale-105 bg-white 
-                bg-opacity-10 backdrop-filter backdrop-blur-lg border border-transparent hover:border-orange-500 
+                bg-opacity-10 backdrop-filter backdrop-blur-lg border  hover:border-orange-700 
                 hover:border-opacity-20 rounded-md p-2"
                 onMouseEnter={() => handleMouseEnter(index)}
                 // onMouseLeave={handleMouseLeave}

@@ -12,11 +12,13 @@ const Home = () => {
       </div>
       <div className="SocialIcons absolute top-[30px] right-[10%] flex flex-row 
       items-end justify-between md:top-[30px] md:right-[10%] gap-7 md:gap-x-40">
-      <FaInstagram className="text-white"/>
-      <FaTwitter className="text-white"/>
-      <FaFacebook className="text-white"/>
-      <FaLinkedin className="text-white"/>
+      <FaInstagram className="text-white hover:scale-125 transition ease-in-out duration-200"/>
+      <FaTwitter className="text-white hover:scale-125 transition ease-in-out duration-200"/>
+      <FaFacebook className="text-white hover:scale-125 transition ease-in-out duration-200"/>
+      <FaLinkedin className="text-white hover:scale-125 transition ease-in-out duration-200"/>
       </div>
+      
+      <hr className="w-full absolute top-[60px] right-[0%] md:w-[100rem] my-4 border-opacity-50 border-white" />
       <div className="absolute top-[40%] left-1/2 md:top-1/3 md:left-1/3 transform -translate-x-1/2 -translate-y-1/3 w-full flex flex-col items-center p-5 md:p-20 gap-5">
         <div className="flex flex-col w-full md:w-2/3 text-center">
           {/* <div className="mt-3 text-sm text-sky-500 flex items-center justify-start">
@@ -27,7 +29,7 @@ const Home = () => {
           <div className="text-4xl md:text-7xl text-center md:text-left  font-semibold text-white leading-tight md:leading-[79px]">
             Solar Fintech
           </div>
-          <hr className="w-full md:w-[500px] my-2 border-white" />
+          
           <p className="text-lg my-4 w-full md:w-2/3 text-white font-normal text-center md:text-left">
             Offering microshares to users and offering solar panels to corporates.
           </p>

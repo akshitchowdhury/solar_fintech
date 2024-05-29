@@ -104,13 +104,13 @@ const HowItWorks = () => {
             <StepsToPartner items={items} />
           
           {/* Visual aids */}
-          <div className="mt-8 flex justify-center">
+          {/* <div className="mt-8 flex justify-center">
             <img
               src="/images/corporate-process-flowchart.png"
               alt="Corporate Process Flowchart"
               className="w-full max-w-xl"
             />
-          </div>
+          </div> */}
         
       </div>
     </>

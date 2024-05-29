@@ -11,6 +11,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import ProductsAndServices from './components/ProductsAndServices/ProductsAndServices';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/" element= {<Home/>}/>
       <Route path="/about" element= {<About/>}/>
       <Route path="/services" element= {<HowItWorks/>}/>
+      <Route path="/products" element= {<ProductsAndServices/>}/>
       <Route path="/contact" element= {<Contact/>}/>
       
       </Routes>

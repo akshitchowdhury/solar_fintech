@@ -60,7 +60,7 @@ function Navbar() {
         className="mx-6 my-10"
       >
         {" "}
-        <h1 className=" mx-20 text-lg text-white"> Pratikshit Chowdhury</h1>
+        <h1 className=" mx-20 text-lg text-white"> Akshit Chowdhury</h1>
       </div>
       <List>
         <Link to="/"> 
@@ -111,6 +111,22 @@ function Navbar() {
             </ListItem>
           </ListItemButton>
         </Link>
+        
+
+        <Link to="/products">
+          <ListItemButton
+          >
+            <ListItem>
+              <ListItemIcon>
+                <Code style={{ color: "white" }} />
+              </ListItemIcon>
+              <ListItemText
+                primary={"Products Services"}
+                className="text-white hover:text-amber-300 transition ease-in-out duration-300 hover:scale-125"
+              />
+            </ListItem>
+          </ListItemButton>
+        </Link>
 
       </List>
       <Divider sx={{ backgroundColor: "white" }} />
@@ -145,7 +161,7 @@ function Navbar() {
   return (
     <div className="absolute top-0 left-0 z-50 p-4">
   <Button onClick={toggleDrawer(true)}>
-    <MenuOpenIcon className="text-black "
+    <MenuOpenIcon className="text-white "
     style={{
       fontSize: '40px'
     }} />
